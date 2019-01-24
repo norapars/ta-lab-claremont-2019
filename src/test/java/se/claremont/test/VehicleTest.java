@@ -31,13 +31,19 @@ public class VehicleTest {
         Garage myGarage = new Garage("Storgatan");
         Vehicle myVehicle = new Vehicle("Volvo", "v40");
         myVehicle.setPrice(1100);
-        myGarage.parkVehicle(2, myVehicle);
+        myGarage.parkVehicle(1, myVehicle);
+
+        Vehicle myVehicle1 = new Vehicle("Volvo", "v90");
+        myVehicle1.setPrice(900);
+        myGarage.parkVehicle(2, myVehicle1);
+
+        Vehicle myVehicle2 = new Vehicle("Mazda", "CX3");
+        myVehicle2.setPrice(800);
+        myGarage.parkVehicle(3, myVehicle2);
+
 
         assertEquals(1, myGarage.getNumberOfCarsWithValueOver(1000)
 
         );
     }
-
-
-
 }

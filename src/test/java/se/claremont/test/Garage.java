@@ -25,6 +25,7 @@ public class Garage {
                 numberOfCars++;
             }
         }
-            return numberOfCars;
-        }
+        return numberOfCars;
+    }
+
     }
